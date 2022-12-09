@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Form</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <div id="app">
+      <h1>{{message}}</h1>
+      <div>
+        <form @submit="prevDefault"> 
+          <p>{{ firstName }}</p>
+          <p>{{ lastName }}</p>
+          <p>{{ email }}</p>
+          <p>{{ phone }}</p>
+
+          <label>First name</label>
+          <input
+            @input="showFirstName"
+            type="text"
+            placeholder="Enter your first name"
+            ref="myFirstName"
+            required
+          />
+          <label>Last name</label>
+          <input
+            @input="showLastName"
+            type="text"
+            placeholder="Enter your last name"
+            ref="myLastName"
+            required
+          />
+          <label>Email</label>
+          <input
+            @input="showEmail"
+            type="email"
+            placeholder="example@email.com"
+            ref="myEmail"
+            required
+          />
+          <label>Phone</label>
+          <input
+            @input="showPhone"
+            type="tel"
+            placeholder="Enter your phone number"
+            ref="myPhone"
+            required
+          />
+          <button class="button">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
