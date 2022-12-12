@@ -11,6 +11,5 @@ Basic Requirements:
 - clear the form inputs after submission 
 This was a task within the Phantom-Devz team. Each member worked individually on the form and then submitted in the group's communication platform (whatsApp)
 
-A form was created using Vue2 CDN
 
 
